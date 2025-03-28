@@ -1,0 +1,203 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #35424a;
+    color: #ffffff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Form Styles */
+form {
+    max-width: 600px;
+    margin: auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background: #35424a;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #2c3e50;
+}
+/* --- Global Styles --- */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #e0f2f1; /* Soft greenish */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* --- Navbar --- */
+  .header {
+    background-color: #264653;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 500;
+    transition: 0.3s;
+  }
+  
+  .nav-links a:hover,
+  .nav-links a.active {
+    color: #a7ffeb;
+    border-bottom: 2px solid #a7ffeb;
+  }
+  
+  /* --- Page Banner --- */
+  .page-banner {
+    background-color: #e0f2f1;
+    padding: 40px 0 20px;
+    text-align: center;
+  }
+  
+  .page-banner h1 {
+    font-size: 36px;
+    color: #264653;
+    margin: 0;
+    font-weight: 700;
+  }
+  
+  /* --- Contact Section --- */
+  .contact-container {
+    display: flex;
+    justify-content: center;
+    padding: 60px 20px;
+  }
+  
+  .contact-card {
+    background-color: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    width: 100%;
+  }
+  
+  .contact-card h2 {
+    margin-top: 0;
+    color: #264653;
+    font-size: 28px;
+    font-weight: 600;
+  }
+  
+  .contact-card p {
+    color: #444;
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+  
+  .contact-form label {
+    display: block;
+    margin-top: 20px;
+    font-weight: 500;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-top: 5px;
+    font-size: 15px;
+  }
+  
+  .contact-form button {
+    margin-top: 25px;
+    background-color: #264653;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .contact-form button:hover {
+    background-color: #2a9d8f;
+  }
+  
+  /* --- Footer --- */
+  .footer {
+    background-color: #264653;
+    text-align: center;
+    padding: 20px 0;
+    color: white;
+    font-size: 14px;
+  }
+  

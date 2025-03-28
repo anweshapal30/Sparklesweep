@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookings - Sparkle Sweep</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Stored Bookings</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="bookings.html">Bookings</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Your Bookings</h2>
+            <ul id="booking-list"></ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Sparkle Sweep. All rights reserved.</p>
+    </footer>
+    <script>
+        // Retrieve and display bookings from local storage
+        const bookings = JSON.parse(localStorage.getItem('bookings')) || [];
+        const bookingList = document.getElementById('booking-list');
+
+        bookings.forEach(booking => {
+            const listItem = document.createElement('li');
+            listItem.textContent = `Name: ${booking.name}, Date: ${booking.date}, Time: ${booking.time}`;
+            bookingList.appendChild(listItem);
+        });
+    </script>
+</body>
+</html>
